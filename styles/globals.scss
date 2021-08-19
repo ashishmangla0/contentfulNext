@@ -1,0 +1,15 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  color: #1d214e;
+  margin: 0;
+}
