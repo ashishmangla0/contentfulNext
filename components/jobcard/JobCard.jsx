@@ -4,9 +4,9 @@ const JobCard = ({ job }) => {
   const { jobTitle, excerpt, slug } = job.fields;
   console.log(job);
   return (
-    <div itemScope itemType="https://schema.org/JobPosting" className={style.jobcard}>
+    <div  itemScope itemType="https://schema.org/JobPosting" className={style.jobcard}>
       <h2 itemProp="title">{jobTitle}</h2>
-      <p itemprop="description">{excerpt}</p>
+      <p itemProp="description">{excerpt}</p>
 
       <Link href={`/jobs/${slug}`}>
           <a>About Us</a>
