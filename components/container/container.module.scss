@@ -1,0 +1,14 @@
+@import "../../styles/functions/all.scss";
+@import "../../styles/mixins/breakpoints";
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  @include media-breakpoint-up(lg) {
+    max-width: 960px;
+    max-width: rem(960px);
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 1140px;
+    max-width: rem(1140px);
+  }
+}

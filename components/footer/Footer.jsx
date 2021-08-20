@@ -1,19 +1,19 @@
 import Link from "next/link";
 import { useEffect } from "react";
-const Footer = ({ children }) => {
-    useEffect(() => {
-        console.log(window.location.hostname) 
-        console.log(window.location.href) // Logs `http://localhost:3000/blog/incididunt-ut-lobare-et-dolore`
-    }, [])
+import Container from "../container/Container";
+const Footer = () => {
   return (
     <>
-      <footer>this is footer
-
-
-
-      <div className="footer__bottom">
-      {new Date().getFullYear()}
-      </div>
+      <footer>
+        <div className>
+          <Container>
+          this is footer
+          </Container>
+        </div>
+      
+        <div className="footer__bottom">
+          <Container>{new Date().getFullYear()}</Container>
+        </div>
       </footer>
     </>
   );

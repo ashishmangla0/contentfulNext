@@ -1,0 +1,6 @@
+@import "../../styles/functions/all.scss";
+@import "../../styles/mixins/breakpoints";
+.jobcard{
+margin: 0 0 rem(10px) 0;
+box-shadow: 0 20px 30px rgb(0 0 0 / 4%);
+}
