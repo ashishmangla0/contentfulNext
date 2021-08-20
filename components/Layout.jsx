@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Footer from "./Footer";
+import Footer from "./footer/Footer";
 import Header from "./header/Header";
 const Layout = ({ children }) => {
   return (

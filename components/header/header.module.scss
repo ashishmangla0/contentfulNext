@@ -1,6 +1,10 @@
-.header{
-    position: absolute;
-    top: 0;
-    z-index: 9;
-    width: 100%;
+@import "../../styles/functions/all.scss";
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  &__top {
+    padding: 0 rem(15px);
+  }
 }
