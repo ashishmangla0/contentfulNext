@@ -3,42 +3,42 @@
     "name": "Chartered Accountant (CA) Firm",
     "icons": [
         {
-            "src": "images/icons/48x48.png",
+            "src": "icons/48x48.png",
             "type": "image/png",
             "sizes": "48x48"
         },
         {
-            "src": "images/icons/72x72.png",
+            "src": "icons/72x72.png",
             "type": "image/png",
             "sizes": "72x72"
         },
         {
-            "src": "images/icons/96x96.png",
+            "src": "icons/96x96.png",
             "type": "image/png",
             "sizes": "96x96"
         },
         {
-            "src": "images/icons/128x128.png",
+            "src": "icons/128x128.png",
             "type": "image/png",
             "sizes": "128x128"
         },
         {
-            "src": "images/icons/192x192.png",
+            "src": "icons/192x192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "images/icons/384x384.png",
+            "src": "icons/384x384.png",
             "type": "image/png",
             "sizes": "384x384"
         },
         {
-            "src": "images/icons/512x512.png",
+            "src": "icons/512x512.png",
             "type": "image/png",
             "sizes": "512x512"
         },
         {
-            "src": "images/icons/maskable.png",
+            "src": "icons/maskable.png",
             "type": "image/png",
             "sizes": "912x912",
             "purpose": "maskable"
