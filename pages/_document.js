@@ -18,6 +18,8 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta name="theme-color" content="#1D214E" />
+          <link rel="apple-touch-icon" href="icons/192x192.png"/>
+          <link rel="manifest" href="manifest.webmanifest"/>
         </Head>
         <body>
           <Main />
