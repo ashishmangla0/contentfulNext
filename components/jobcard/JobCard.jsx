@@ -11,7 +11,7 @@ const JobCard = ({ job }) => {
     >
       <h2 itemProp="title">{jobTitle}</h2>
       <p itemProp="description">{excerpt}</p>
-      <div itemProp="jobLocation" itemprop="jobLocation" itemscope itemtype="https://schema.org/Place">{location}</div>
+      <div itemProp="jobLocation" itemScope itemType="https://schema.org/Place">{location}</div>
       <div itemProp="datePosted">{Dated}</div>
 
       <Link href={`/jobs/${slug}`}>
