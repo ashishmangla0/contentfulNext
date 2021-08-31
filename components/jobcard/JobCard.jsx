@@ -1,16 +1,22 @@
-import Link from 'next/link';
-import style from './jobcard.module.scss';
+import Link from "next/link";
+import style from "./jobcard.module.scss";
 const JobCard = ({ job }) => {
-  const { jobTitle, excerpt, slug } = job.fields;
+  console.log(job.fields);
+  const { jobTitle, excerpt, slug,location,Dated} = job.fields;
   return (
-    <div  itemScope itemType="https://schema.org/JobPosting" className={style.jobcard}>
+    <div
+      itemScope
+      itemType="https://schema.org/JobPosting"
+      className={style.jobcard}
+    >
       <h2 itemProp="title">{jobTitle}</h2>
       <p itemProp="description">{excerpt}</p>
+      <div itemProp="jobLocation">{location}</div>
+      <div itemProp="datePosted">{Dated}</div>
 
       <Link href={`/jobs/${slug}`}>
-          <a>View Detail</a>
-        </Link>
-
+        <a>View Detail</a>
+      </Link>
     </div>
   );
 };
