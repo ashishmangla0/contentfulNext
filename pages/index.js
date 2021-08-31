@@ -2,7 +2,7 @@ import Head from "next/head";
 import { createClient } from "contentful";
 import JobCard from "../components/jobcard/JobCard";
 import Container from "../components/container/Container";
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const client = createClient({
     space: process.env.CONTENT_SPACE_ID,
     accessToken: process.env.CONTENT_ACCESS_TOKEN,
