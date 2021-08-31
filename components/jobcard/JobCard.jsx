@@ -8,7 +8,7 @@ const JobCard = ({ job }) => {
       <p itemProp="description">{excerpt}</p>
 
       <Link href={`/jobs/${slug}`}>
-          <a>About Us</a>
+          <a>View Detail</a>
         </Link>
 
     </div>
