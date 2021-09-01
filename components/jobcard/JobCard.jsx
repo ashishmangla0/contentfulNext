@@ -14,7 +14,7 @@ const JobCard = ({ job }) => {
       
       <div itemProp="datePosted">{Dated}</div>
 
-      <Link href={`/${slug}`}>
+      <Link href={`/jobs/${slug}`}>
         <a>View Detail</a>
       </Link>
 

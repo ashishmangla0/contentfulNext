@@ -12,7 +12,7 @@ export async function getServerSideProps() {
   return { props: { jobs: res.items } };
 }
 
-export default function Home({ jobs }) {
+const Home = ({ jobs })=> {
   return (
     <>
       <Head>
@@ -27,3 +27,7 @@ export default function Home({ jobs }) {
     </>
   );
 }
+
+
+Home.layout = "L2";
+export default Home

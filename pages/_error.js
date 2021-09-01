@@ -1,5 +1,5 @@
 
-function Error({ statusCode }) {
+const  Error = ({ statusCode })=> {
     return (
       <p>
         {statusCode
@@ -13,5 +13,5 @@ function Error({ statusCode }) {
     const statusCode = res ? res.statusCode : err ? err.statusCode : 404
     return { statusCode }
   }
-  
+  Error.layout = "EL";
   export default Error
