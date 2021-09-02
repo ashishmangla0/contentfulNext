@@ -15,10 +15,10 @@ const Error404 = () => {
             />
           </div>
           <div className="col-md-6">
-            <h1 class="block__title">
+            <h1 className="block__title">
               {" "}
-              4<span class="block__highlight">0</span>4{" "}
-              <span class="block__title-span">oops! page not found</span>{" "}
+              4<span className="block__highlight">0</span>4{" "}
+              <span className="block__title-span">oops! page not found</span>{" "}
             </h1>
           </div>
         </div>

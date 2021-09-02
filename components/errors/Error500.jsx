@@ -15,10 +15,12 @@ const Error500 = () => {
             />
           </div>
           <div className="col-md-6">
-            <h1 class="block__title">
+            <h1 className="block__title">
               {" "}
-              5<span class="block__highlight">0</span>0{" "}
-              <span class="block__title-span">It's not you it's us. Please try again later</span>{" "}
+              5<span className="block__highlight">0</span>0{" "}
+              <span className="block__title-span">
+                It's not you it's us. Please try again later
+              </span>{" "}
             </h1>
           </div>
         </div>
