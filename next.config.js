@@ -8,5 +8,9 @@ module.exports = withPWA({
     register: true,
     scope: '/',
     sw: 'service-worker.js'
-  }
+  },
+  images: {
+    loader: 'cloudinary',
+    path: 'https://res.cloudinary.com/cagsn/image/upload/',
+  },
 })
