@@ -16,11 +16,10 @@ const Error500 = () => {
           </div>
           <div className="col-md-6">
             <h1 className="block__title">
-              {" "}
-              5<span className="block__highlight">0</span>0{" "}
+              5<span className="block__highlight">0</span>0
               <span className="block__title-span">
                 It's not you it's us. Please try again later
-              </span>{" "}
+              </span>
             </h1>
           </div>
         </div>
