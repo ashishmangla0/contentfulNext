@@ -18,7 +18,7 @@ const Error500 = () => {
             <h1 className="block__title">
               5<span className="block__highlight">0</span>0
               <span className="block__title-span">
-                It's not you it's us. Please try again later
+                It &apos; s not you it&apos;s us. Please try again later
               </span>
             </h1>
           </div>
