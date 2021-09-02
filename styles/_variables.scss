@@ -1,0 +1,37 @@
+$primaryColor: #1d214e;
+$secondaryColor1: #04d7a2;
+$error: #d32752;
+$info: #f6c31c;
+$lightColor: #FFFFFF;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+
+
+
+// @debug map-get($grid-breakpoints,sm);
+// @debug map-has-key($grid-breakpoints,sm);
+// @debug map-has-key($grid-breakpoints,xxl); //false
+// @debug map-remove($grid-breakpoints,xs );
+// @debug map-merge($grid-breakpoints, ("pink": #FFC0CB) );
+//@debug map-merge($grid-breakpoints, $container-max-widths );
+
+
+
+
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;

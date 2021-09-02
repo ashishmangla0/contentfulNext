@@ -1,0 +1,10 @@
+%d-flex{
+    display: flex;
+}
+%jcs{
+    justify-content: space-between;
+}
+%d-fjsb{
+@extend %d-flex;
+@extend %jcs;
+}
