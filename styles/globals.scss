@@ -37,7 +37,10 @@ body {
   color: $primaryColor;
   margin: 0;
 }
-
+address{
+  font-style: normal;
+    line-height: inherit;
+}
 .row {
   @include make-row();
 }
