@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { useEffect } from "react";
 import Container from "../container/Container";
 import style from './footer.module.scss';
 const Footer = () => {
@@ -24,7 +22,7 @@ const Footer = () => {
                 &copy; {new Date().getFullYear()} copyright all right reserved
                 </div>
                 <div className="">
-                Made with <span class="icon icon-heart"></span> in <a href="http://itvision.co.in/" target="_blank" class="footer__link-developer" rel="noreferrer">ITvision</a>
+                Made with <span className="icon icon-heart"></span> in <a href="http://itvision.co.in/" target="_blank" className="footer__link-developer" rel="noreferrer">ITvision</a>
                 </div>
               </div>
 
