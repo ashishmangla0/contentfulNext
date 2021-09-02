@@ -16,15 +16,15 @@ const Footer = () => {
           <Container>
             <div className="row">
               <div className={`col-12 ${style.footer__menu}`} role="menu">
-                <a className={style.footer__menuitem} role="menuitem" href="https://cagsn.com/privacy-policy/" target="_blank">Privacy Policy</a>
-                <a className={style.footer__menuitem} role="menuitem" href="https://cagsn.com/sitemap/" target="_blank">Sitemap</a>
+                <a className={style.footer__menuitem} role="menuitem" href="https://cagsn.com/privacy-policy/" target="_blank" rel="noreferrer">Privacy Policy</a>
+                <a className={style.footer__menuitem} role="menuitem" href="https://cagsn.com/sitemap/" target="_blank" rel="noreferrer">Sitemap</a>
               </div>
               <div className={`col-12 ${style.footer__content}`}>
                 <div className="">
                 &copy; {new Date().getFullYear()} copyright all right reserved
                 </div>
                 <div className="">
-                Made with <span class="icon icon-heart"></span> in <a href="http://itvision.co.in/" target="_blank" class="footer__link-developer">ITvision</a>
+                Made with <span class="icon icon-heart"></span> in <a href="http://itvision.co.in/" target="_blank" class="footer__link-developer" rel="noreferrer">ITvision</a>
                 </div>
               </div>
 
