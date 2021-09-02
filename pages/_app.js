@@ -2,8 +2,8 @@
 import ErrorLayout from "../components/layouts/ErrorLayout";
 import MainLayout from "../components/layouts/MainLayout";
 const layouts = {
-  EL: ErrorLayout,
-  L2: MainLayout,
+  ErrorLayout: ErrorLayout,
+  MainLayout: MainLayout,
 };
 import "../styles/globals.scss";
 

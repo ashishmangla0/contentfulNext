@@ -29,5 +29,5 @@ const Home = ({ jobs })=> {
 }
 
 
-Home.layout = "L2";
+Home.layout = "MainLayout";
 export default Home

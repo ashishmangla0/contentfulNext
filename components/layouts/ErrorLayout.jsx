@@ -1,8 +1,4 @@
-const ErrorLayout = ({children}) =>{
-    return (
-        <>
-          <main id="main">{children}</main>
-        </>
-      );
-}
-export default ErrorLayout
+const ErrorLayout = ({ children }) => {
+  return <main className="error">{children}</main>;
+};
+export default ErrorLayout;
