@@ -5,6 +5,6 @@ const JobDetail = ()=> {
       </div>
     )
   }
-  JobDetail.layout = "L2";
+  JobDetail.layout = "MainLayout";
 
   export default JobDetail
