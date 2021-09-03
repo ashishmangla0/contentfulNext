@@ -28,7 +28,10 @@ export  const getServerSideProps = async({params}) => {
     'fields.slug' : params.slug
   });
 
-  return { props: { job: items[0] } };
+  return { 
+    props: { job: items[0]} ,
+    notFound: true,
+  };
 }
 
 // export async function getServerSideProps() {
@@ -38,7 +41,14 @@ export  const getServerSideProps = async({params}) => {
 // }
 const JobDetail = ({job}) => {
   console.log(job);
-  return <div>Recipe Details</div>;
+  const { jobTitle, excerpt, slug,location,Dated,hiringFor} = job.fields;
+
+
+  return <div>Recipe Details
+
+{jobTitle}
+
+  </div>;
 };
 JobDetail.layout = "MainLayout";
 
