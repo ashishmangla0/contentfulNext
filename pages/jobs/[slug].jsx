@@ -1,5 +1,5 @@
 import { createClient } from 'contentful'
-
+import Error from '../_error';
 const client = createClient({
   space: process.env.CONTENT_SPACE_ID,
   accessToken: process.env.CONTENT_ACCESS_TOKEN,
@@ -21,16 +21,19 @@ const client = createClient({
 //   };
 // };
 
-export  const getServerSideProps = async({params}) => {
+export  const getServerSideProps = async({params, notFound = true}) => {
  
   const {items} = await client.getEntries(
     { content_type: "jobTitle",
     'fields.slug' : params.slug
   });
+  
 
   return { 
-    props: { job: items[0]} ,
-    notFound: true,
+    props: {
+      notFound,
+       job: items[0] ? items[0] : null
+      }
   };
 }
 
@@ -40,6 +43,7 @@ export  const getServerSideProps = async({params}) => {
 //   return { props: { jobs: res.items } };
 // }
 const JobDetail = ({job}) => {
+  if(!job) return <Error statusCode={404}>mere pass job nahi hai </Error>
   console.log(job);
   const { jobTitle, excerpt, slug,location,Dated,hiringFor} = job.fields;
 
