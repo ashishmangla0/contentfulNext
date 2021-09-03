@@ -1,7 +1,7 @@
 import Link from "next/link";
 import style from "./jobcard.module.scss";
 const JobCard = ({ job }) => {
-  console.log(job.fields);
+  // console.log(job.fields);
   const { jobTitle, excerpt, slug,location,Dated,hiringFor} = job.fields;
   return (
     <div

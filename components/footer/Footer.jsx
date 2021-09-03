@@ -7,6 +7,11 @@ const addressList = [
   "In front of Central Bank of India, Deeg, Bharatpur-321203",
   "A-113, Brother Hood Apartment, H Block, vikas Puri New Delhi 110018",
 ];
+// const services = [
+//   {
+//     title:
+//   }
+// ]
 const Footer = () => {
   return (
     <>
