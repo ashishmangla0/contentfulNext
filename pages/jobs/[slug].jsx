@@ -1,58 +1,61 @@
-import { createClient } from 'contentful'
-import Error from '../_error';
+import Head from "next/head";
+import { createClient } from "contentful";
+import Container from "../../components/container/Container";
+import Section from "../../components/section/Section";
+import Error from "../_error";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import style from './jobdetail.module.scss';
+
 const client = createClient({
   space: process.env.CONTENT_SPACE_ID,
   accessToken: process.env.CONTENT_ACCESS_TOKEN,
-})
+});
 
-
-// export const getStaticPaths = async () => {
-//   const res = await client.getEntries({ content_type: "jobTitle" });
-//   //return { props: { jobs: res.items } };
-//   const paths = res.items.map((item) => {
-//     return {
-//       params: { slug: item.fields.slug },
-//     };
-//   });
-
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };
-
-export  const getServerSideProps = async({params, notFound = true}) => {
- 
-  const {items} = await client.getEntries(
-    { content_type: "jobTitle",
-    'fields.slug' : params.slug
+export const getServerSideProps = async ({ params, notFound = true }) => {
+  const { items } = await client.getEntries({
+    content_type: "jobTitle",
+    "fields.slug": params.slug,
   });
-  
 
-  return { 
+  return {
     props: {
       notFound,
-       job: items[0] ? items[0] : null
-      }
+      job: items[0] ? items[0] : null,
+    },
   };
-}
+};
 
-// export async function getServerSideProps() {
-//   const res = await client.getEntries({ content_type: "jobTitle" });
-
-//   return { props: { jobs: res.items } };
-// }
-const JobDetail = ({job}) => {
-  if(!job) return <Error statusCode={404}>mere pass job nahi hai </Error>
-  console.log(job);
-  const { jobTitle, excerpt, slug,location,Dated,hiringFor} = job.fields;
-
-
-  return <div>Recipe Details
-
-{jobTitle}
-
-  </div>;
+const JobDetail = ({ job }) => {
+  if (!job) return <Error statusCode={40412}>mere pass job nahi hai </Error>;
+  const { jobTitle, location,excerpt, Dated, hiringFor, body } = job.fields;
+  return (
+    <>
+       <Head>
+        <title>{jobTitle}</title>
+        <meta name="description" content={excerpt} />
+      </Head>
+      <Section >
+        <Container>
+          <div className="row">
+            <div className="col-md-9" itemScope
+      itemType="https://schema.org/JobPosting" >
+              <h1 className={style.jobdetail__title} itemprop="title">{jobTitle}</h1>
+              {location}
+              <div className={style.jobdetail__details}>
+              {documentToReactComponents(body)}
+              </div>
+            </div>
+            <div className="col-md-3">
+              asdfd fsa dfsdf
+              ads fdsa
+              f sdf
+              s
+            </div>
+          </div>
+        </Container>
+      </Section>
+    </>
+  );
 };
 JobDetail.layout = "MainLayout";
 
