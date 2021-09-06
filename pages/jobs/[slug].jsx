@@ -39,7 +39,7 @@ const JobDetail = ({ job }) => {
           <div className="row">
             <div className="col-md-9" itemScope
       itemType="https://schema.org/JobPosting" >
-              <h1 className={style.jobdetail__title} itemprop="title">{jobTitle}</h1>
+              <h1 className={style.jobdetail__title} itemProp="title">{jobTitle}</h1>
               {location}
               <div className={style.jobdetail__details}>
               {documentToReactComponents(body)}
