@@ -34,7 +34,7 @@ const Footer = () => {
               <div className="col-12 col-lg-3 footer__col footer__col--location">
               <h5 className={style.footer__title}> Our Addresses </h5>
                 {addressList.map((address,index) => (
-                  <address key={`address${index}`} className={style.footer__address}>{address}</address>
+                  <address key={`address${index}`} className={style.footer__address} itemProp="address" itemScope itemType="https://schema.org/PostalAddress">{address}</address>
                 ))}
               </div>
             </div>
