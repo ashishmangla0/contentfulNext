@@ -1,0 +1,22 @@
+@import '../../styles/functions/_all.scss';
+.jobdetail{
+    &__title{
+        font-weight: 700;
+        font-size: rem(28px);
+        margin-bottom: rem(24px);
+    }
+    &__details{
+        font-weight: 400;
+        *{
+            margin-bottom: rem(16px);
+        }
+        ul{
+            li{
+                p{
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}
