@@ -13,4 +13,5 @@ module.exports = withPWA({
     loader: 'cloudinary',
     path: 'https://res.cloudinary.com/cagsn/image/upload/',
   },
+  trailingSlash: true,
 })
